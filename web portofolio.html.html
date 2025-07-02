@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fendi UI Designer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .underline-custom {
+      border-bottom: 3px solid #ff4c00;
+      padding-bottom: 0.1rem;
+    }
+
+    nav a {
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ff4c00;
+    }
+
+    .nav-about {
+      border: 2px solid #ff4c00;
+      border-radius: 9999px;
+      padding: 0.4rem 1.2rem;
+      color: #ff4c00;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    .nav-about:hover {
+      background-color: #ff4c00;
+      color: white;
+    }
+
+    .btn-talk {
+      border: 2px solid #ff4c00;
+      border-radius: 9999px;
+      padding: 0.4rem 1.2rem;
+      color: #ff4c00;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      background-color: transparent;
+      transition: all 0.3s ease;
+    }
+
+    .btn-talk i {
+      color: #ff4c00;
+    }
+
+    .btn-talk:hover {
+      background-color: #ff4c00;
+      color: white;
+    }
+
+    .btn-talk:hover i {
+      color: white;
+    }
+
+    @keyframes slideInLeft {
+      from {
+        transform: translateX(-50px);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    .profile-frame {
+      animation: slideInLeft 1s ease-out;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-900 min-h-screen flex flex-col">
+
+  <!-- Header -->
+  <header class="px-6 py-5 max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-4">
+    <div class="flex items-center gap-3">
+      <div class="w-8 h-8 rounded-full bg-[#ff4c00] flex items-center justify-center font-bold text-white text-lg select-none"><b><span style="color: aqua;">F</span></b></div>
+      <span class="font-normal text-sm select-none">Fendi</span>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="hidden md:flex items-center gap-6 text-sm font-normal text-gray-700 select-none">
+      <a href="about me.html.html" class="nav-about">About</a>
+      <a href="experience.html.html">Experience</a>
+      <a href="profil.html.html">Portofolio</a>
+      <a href="case study.html.html">Case Study</a>
+      <a href="sosial media.html.html">Social Media</a>
+    </nav>
+
+    <!-- Let's Talk Button -->
+    <a href="https://wa.me/6287846000691" target="_blank" class="btn-talk text-sm">
+      <i class="fas fa-phone-alt"></i>
+      Let's Talk
+    </a>
+
+    <!-- Mobile Nav (Simple) -->
+    <div class="md:hidden w-full mt-4 flex flex-col gap-2 text-sm">
+      <a href="about me.html" class="nav-about text-center">About</a>
+      <a href="experience.html" class="text-center">Experience</a>
+      <a href="profil.html" class="text-center">Portofolio</a>
+      <a href="case study.html" class="text-center">Case Study</a>
+      <a href="sosial media.html" class="text-center">Social Media</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main class="flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto px-6 flex-1 relative text-center md:text-left">
+    <section class="max-w-xl md:max-w-lg lg:max-w-xl mb-10 md:mb-0">
+      <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight mb-4">
+        Hai saya <span class="font-extrabold"><b>Fendi,</b></span><br />
+        <span class="underline-custom block">FrontEnd</span><br />
+        <span class="underline-custom block">Designer</span>
+      </h1>
+      <p class="text-gray-700 text-sm sm:text-base max-w-md mx-auto md:mx-0 mb-8">
+        <b><i>Hai, perkenalkan saya Fendi mahasiswa informatika dan enthusiast IT.</i></b>
+      </p>
+    </section>
+
+    <section class="relative flex justify-center md:justify-end w-full max-w-xs md:max-w-md">
+      <img src="me.jpeg" alt="fendi" class="profile-frame rounded-t-[200px] rounded-b-lg w-64 md:w-[320px] object-cover z-10" />
+    </section>
+  </main>
+
+</body>
+</html>
